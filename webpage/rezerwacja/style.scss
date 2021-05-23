@@ -1,0 +1,221 @@
+body {
+	background-image: url("../../img/sala_kinowa.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	padding-bottom: 0;
+	height: 100vh;
+}
+
+@media (max-width: 650px) {
+	body {
+		background-image: url("");
+		background-color: #a1a1a1;
+	}
+}
+
+header {
+	height: 5vh;
+	margin-bottom: 7vh;
+}
+
+@media (max-width: 800px) {
+	header {
+		margin-bottom: 5vh;
+	}
+}
+
+@media (max-width: 600px) {
+	header {
+		margin-bottom: 2vh;
+	}
+}
+
+h1 {
+	font-size: 7vw;
+	font-weight: 300;
+	color: #58555a;
+}
+
+@media (max-width: 650px) {
+	h1 {
+		font-size: 40px;
+	}
+}
+
+.content {
+	transform: translateY(-5vh);
+	max-height: 75%;
+}
+
+input {
+	width: 240px;
+	height: 50px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+	background-color: #e2e2e2;
+	border: 1px solid #707070;
+	padding: 5px;
+}
+
+@media (max-width: 650px) {
+	.responsive-input {
+		width: 200px;
+		height: 40px;
+	}
+}
+
+.login {
+	gap: 12vh;
+}
+
+@media (max-width: 1200px) {
+	.login {
+		gap: 4vh;
+	}
+}
+
+@media (max-width: 600px) {
+	.login {
+		gap: 2vh;
+	}
+}
+
+button {
+	transition: 0.3s;
+}
+
+.cool-button {
+	background-color: #1a1a1a;
+	padding: 3px 15px;
+	color: white;
+	border: 0;
+}
+
+.cool-button:hover {
+	background-color: #58555a;
+}
+
+@media (min-width: 650px) {
+	button {
+		font-size: 25px;
+	}
+}
+
+select {
+	line-height: 16px;
+	font-size: 18px;
+	width: 210px;
+	height: 30px;
+	background-color: #1a1a1a;
+	border: 0;
+	color: white;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+select:hover {
+	background-color: #58555a;
+}
+
+.log {
+	color: black;
+}
+
+.logout-button {
+	width: 150px;
+	height: 50px;
+}
+
+th {
+	padding: 5px;
+	color: black;
+	font-weight: normal;
+}
+
+.seat {
+	padding: 2.5px;
+}
+
+.seat-num {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 20px;
+	height: 20px;
+	background-color: red;
+	color: white;
+}
+
+.seat-num > p {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.submit {
+	background-color: #1a1a1a;
+	border: 0;
+	color: white;
+}
+
+.submit:hover {
+	background-color: #58555a;
+}
+
+.back {
+	position: fixed;
+	bottom: 0;
+	width: 100vw;
+	font-size: 20px;
+	padding: 10px 0;
+	background-color: #f7b633;
+}
+
+.back > a {
+	color: white;
+	text-decoration: none;
+}
+
+.alert {
+	position: fixed;
+	top: 30px;
+	left: 50%;
+	transform: translateX(-50%);
+	border: solid #b83930 2px;
+	border-radius: 0;
+	padding: 5rem;
+	text-align: center;
+	color: #b83930;
+	background-color: #f77b72;
+}
+
+.alert-close {
+	position: absolute;
+	top: 5px;
+	right: 15px;
+}
+
+.result {
+	width: 30ch;
+	margin: auto;
+	text-align: center;
+	line-height: 21px;
+}
+
+.go-back-button {
+	background-color: #1a1a1a;
+	border: 0;
+	border-radius: 2px;
+	color: white;
+	padding: 15px 10px;
+}
+
+.go-back-button:hover {
+	background-color: #58555a;
+}

@@ -1,0 +1,117 @@
+body {
+	font-family: "Roboto", sans-serif;
+	background-image: url("../../img/sala_kinowa.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	padding-bottom: 0;
+	height: 100vh;
+}
+
+@media (max-width: 650px) {
+	body {
+		background-image: url("");
+		background-color: #a1a1a1;
+	}
+}
+
+header {
+	height: 5vh;
+	margin-bottom: 7vh;
+}
+
+@media (max-width: 800px) {
+	header {
+		margin-bottom: 5vh;
+	}
+}
+
+@media (max-width: 600px) {
+	header {
+		margin-bottom: 2vh;
+	}
+}
+
+h1 {
+	font-size: 7vw;
+	font-weight: 300;
+	color: #58555a;
+}
+
+@media (max-width: 650px) {
+	h1 {
+		font-size: 40px;
+	}
+}
+
+.content {
+	transform: translateY(-5vh);
+	max-height: 75%;
+	gap: 30px;
+}
+
+input {
+	width: 240px;
+	height: 50px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+	background-color: #e2e2e2;
+	border: 1px solid #707070;
+	padding: 5px;
+}
+
+@media (max-width: 650px) {
+	.responsive-input {
+		width: 200px;
+		height: 40px;
+	}
+}
+
+.cool-button {
+	background-color: #1a1a1a;
+	padding: 3px 15px;
+	color: white;
+	border: 0;
+}
+
+.cool-button:hover {
+	background-color: #58555a;
+}
+
+.alert {
+	position: fixed;
+	top: 30px;
+	left: 50%;
+	transform: translateX(-50%);
+	border: solid #b83930 2px;
+	border-radius: 0;
+	padding: 5rem;
+	text-align: center;
+	color: #b83930;
+	background-color: #f77b72;
+}
+
+.alert-close {
+	position: absolute;
+	top: 5px;
+	right: 15px;
+}
+
+.back {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100vw;
+	font-size: 20px;
+	padding: 10px 0;
+	background-color: #f7b633;
+}
+
+.back > a {
+	color: white;
+	text-decoration: none;
+}
